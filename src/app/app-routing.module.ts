@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomescreenComponent } from './pages/homescreen/homescreen.component';
-import { SearchscreenComponent } from './pages/searchscreen/searchscreen.component';
+import { HomeComponent } from './pages/home/home.component';
 import { MovieDetailsComponent } from './pages/movie-details/movie-details.component';
+import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
-  {path:'',component:HomescreenComponent},
-  {path:'/search',component:SearchscreenComponent},
-  {path:'/movie/:id',component:MovieDetailsComponent},
-
+  {path:'',component:HomeComponent},
+  {path:'search',component:SearchComponent},
+  {path:'movie/:id',component:MovieDetailsComponent}
 ];
 
 @NgModule({
